@@ -8,8 +8,8 @@ import {Arithmeticable} from '../src/index';
 
 describe('prueba hexadecimal', () =>{
   it('primer test', () => {
-    let numeros = new abstractgArithmeticableCollection<Rational>([1,2,3,4]);
-    expect().to.be.equal("")
+    //let numeros = new abstractgArithmeticableCollection<Rational>([1,2,3,4]);
+    //expect().to.be.equal("")
   });
     
 });
