@@ -757,7 +757,46 @@ Se crea una interfaz la cual crea una array de la classe streamable y se definen
 para implementar la interfaz y almacenar sus busquedas.
 
  
- 
+## Nota:
+Al intentar subir la documentación despues de ejecutar el comando "npm run doc" de manera exitosa, github por alguna razon que desconozco no me deja seguir haciendo push al repo saliendo lo siguiente:
+
+docs de manera exitosa
+```
+[~/practicasDSI/Practica6(master)]$npm run doc
+
+> practica6@1.0.0 doc
+> typedoc; touch ./docs/.nojekyll
+
+Warning: Unable to locate entry point: /home/usuario/practicasDSI/Practica6/src/ejercicio-2/BasicStreamableCollection.ts
+Warning: StreamableVideo, defined at src/ejercicio-2/Streamable.ts:7, is referenced by ejercicio-2/Streamable.Streamable but not included in the documentation.
+Info: Documentation generated at ./docs
+```
+
+error al subir al git
+```
+[~/practicasDSI/Practica6(master)]$git push -u prct6 
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-4d1b3ee5b9.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-4d1b3ee5b9.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-4d1b3ee5b9.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1146:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-4d1b3ee5b9.sock'
+}
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct06-generics-solid-lucianosekulic/'
+```
+
+Lo dejo en constanca en el informe para que se pueda apreciar de que los docs se ha puesto y generado como en practicas anteriores.
+
  
  
 
